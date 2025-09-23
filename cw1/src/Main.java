@@ -9,7 +9,7 @@ public class Main {
         stopnieFahrenheita = 1.8 * stopnieCelsjusza + 32;
 
         System.out.println("Temperatura w stopniach Fahrenheita: " + stopnieFahrenheita);
-       */
+
         // zad 2
         System.out.print("Podaj pierwsza liczbe: ");
         int liczba1 = scanner.nextInt();
@@ -38,5 +38,28 @@ public class Main {
 
         System.out.println("Najwieksza liczba: "+maks);
         System.out.println("Najmniejsza liczba: " +min);
+
+       */
+
+        //zad 3
+
+        System.out.print("Podaj wage: ");
+        double waga = scanner.nextDouble();
+
+        System.out.print("Podaj wzrost: ");
+        double wzrost = scanner.nextDouble();
+
+        double bmi = waga/(wzrost * wzrost);
+
+        if(bmi<18.5) {
+            System.out.println("Niedowaga");
+        }
+        else if(bmi <= 24.9) {
+            System.out.println("Waga prawidlowa");
+        }
+        else {
+            System.out.println("Nadwaga");
+        }
+
     }
 }
