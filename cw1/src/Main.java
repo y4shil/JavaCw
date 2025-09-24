@@ -115,34 +115,34 @@ public class Main {
         //zad 6
         System.out.println("Prosty kalkulator: +, -, *, /");
         System.out.print("Podaj pierwszą liczbę: ");
-        double liczba1 = scanner.nextDouble();
+        double liczb1 = scanner.nextDouble();
 
         System.out.print("Podaj operację (+, -, *, /): ");
         char operacja = scanner.next().charAt(0);
 
         System.out.print("Podaj drugą liczbę: ");
-        double liczba2 = scanner.nextDouble();
+        double liczb2 = scanner.nextDouble();
 
         double wynik;
         boolean blad = false;
 
         switch (operacja) {
             case '+':
-                wynik = liczba1 + liczba2;
+                wynik = liczb1 + liczb2;
                 break;
             case '-':
-                wynik = liczba1 - liczba2;
+                wynik = liczb1 - liczb2;
                 break;
             case '*':
-                wynik = liczba1 * liczba2;
+                wynik = liczb1 * liczb2;
                 break;
             case '/':
-                if (liczba2 == 0) {
+                if (liczb2 == 0) {
                     System.out.println("Błąd: dzielenie przez zero!");
                     blad = true;
                     wynik = 0;
                 } else {
-                    wynik = liczba1 / liczba2;
+                    wynik = liczb1 / liczb2;
                 }
                 break;
             default:
